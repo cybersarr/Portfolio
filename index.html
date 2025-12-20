@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing</title>
+
+  <!-- js tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  
+<!-- icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Fontwesome -->
+  <script src="https://kit.fontawesome.com/6b54c4443a.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="assets/js/"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+          --font-syne: 'Syne', sans-serif;
+        }
+        .bordo::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+
+          @apply absolute w-full h-full -rotate-y-8 left-6 bottom-6 perspective-[300px]  border-1 border-gray-200;
+      }
+    
+    @theme {
+          --font-syne: 'Syne', sans-serif;
+        }
+        .bordo::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+
+          @apply absolute w-full h-full -rotate-y-8 left-6 bottom-6 perspective-[300px]  border-1 border-gray-200;
+        }
+
+        .work-1 {
+          background-image: url('Img/COVER.jpg');
+          @apply bg-center bg-cover;
+        }
+
+        .work-2 {
+          background-image: url('Img/Senza titolo-1.png');
+          @apply bg-center bg-cover;
+        }
+
+        .work-3 {
+          background-image: url('Img/IMG_6961.JPG');
+          @apply bg-center bg-cover;
+        }
+        
+        .work-4 {
+          background-image: url('assest/img/images/portfolio/work4.jpg');
+          @apply bg-center bg-cover;
+        }
+
+        .work-5 {
+          background-image: url('assest/img/images/portfolio/work5.jpg');
+          @apply bg-center bg-cover;
+        }
+
+        .work-6 {
+          background-image: url('assest/img/images/portfolio/work6.jpg');
+          @apply bg-center bg-cover;
+        }
+
+        .bar:after {
+          content: "/";
+          @apply absolute px-2 text-gray-400;
+        }
+
+        .bar:last-child:after {
+          content: "";
+        }
+      </style>
+
+</head>
+
+</head>
+
+<body class="!font-syne bg-gray-100">
+
+  <div class="lg:flex">
+
+    <!-- nav -->
+    <div
+      class="hidden lg:flex lg:flex-col bg-white h-screen w-[350px] px-[70px] justify-center space-y-10 border-gray-200 border-r-2 content-center position: fixed">
+      <div class="w-42">
+        <img src="Img/LOGOPRS.png" alt="">
+        <p class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500">Graphic Designer</p>
+      </div>
+      <ul class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500 gap-4">
+        <li class=" hover:text-black"><a href="index.html">home</a></li>
+        <li class=" hover:text-black"><a href="about.html">about</a></li>
+        <li class=" hover:text-black"><a href="contact.html">contact</a></li>
+      </ul>
+      <div class="text-sm text-gray-500 pt-10">
+        <p>© 2026 Cyber <br>
+          Created by <span class="font-bold">cyberstudio</span></p>
+      </div>
+    </div>
+
+    <!-- nav cellulare -->
+    <div class="lg:hidden flex fixed bg-black w-screen h-[50px] px-8 items-center justify-between">
+      <div class="w-24 py-4">
+        <img src="Img/LOGOPRS.png" alt="">
+      </div>
+      <button id="sidebar-btn" class="text-2xl font-bold text-white">x</button>
+    </div>
+
+
+    <!-- main -->
+
+
+  <div class="space-y-5">
+
+    <div class="grid p-20">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:pl-70  gap-5">
+
+        <!-- work 1 -->
+        <div class="md:px-6 md:pt-6 col-span-1 w-fit border !border-gray-400 p-2 lg:p-2 cursor-pointer">
+          <div class="h-[360px] md:[300px]"><a class="modale-open" href="https://www.behance.net/gallery/239755287/Proposta-Visual-FishBall"><img class="h-full object-cover"
+                src="Img/COVER.jpg" alt=""></a></div>
+          <div class="my-5 bg-gray-600 w-full h-[1px]"></div>
+          <p class="pl-5 font-bold text-gray-400"><a href="https://www.behance.net/gallery/239755287/Proposta-Visual-FishBall">BOYFRIEND FISHBALL</a></p>
+          <p class="pb-5 pl-5 text-gray-600">Visual Single</p>
+        </div>
+        <!-- work 2 -->
+        <div class="md:px-6 md:pt-6 col-span-1 w-fit border !border-gray-400 lg:p-2 cursor-pointer">
+          <div class="h-[360px] md:[300px]"><a class="modale-open" href="https://www.behance.net/gallery/237704193/Gennaio-Fotografia-e-Post-Manipulation"><img class="h-full object-cover"
+                src="Img/1.jpg" alt=""></a></div>
+          <div class=" my-5 bg-gray-600 w-full h-[1px]"></div>
+          <p class="pl-5 font-bold text-gray-400"><a href="https://www.behance.net/gallery/237704193/Gennaio-Fotografia-e-Post-Manipulation"> GENNAIO</a> </p>
+          <p class="pb-5 pl-5 text-gray-600">Scatto e PhotoManipulation</p>
+        </div>
+        <!-- work 3 -->
+        <div class="md:px-6 md:pt-6 col-span-1 w-fit border !border-gray-400 p-2 lg:p-2 cursor-pointer">
+          <div class="h-[360px] md:[300px]"><a class="modale-open" href="https://www.behance.net/gallery/236266459/CUTINA-LIQUORI-Proposta-di-rebranding"><img class="h-full object-cover"
+                src="Img/IMG_6961.JPG" alt=""></a></div>
+          <div class="my-5 bg-gray-600 w-full h-[1px]"></div>
+          <p class="pl-5 font-bold text-gray-400"> <a href="https://www.behance.net/gallery/236266459/CUTINA-LIQUORI-Proposta-di-rebranding">CUTINA LIQUORI</a></p>
+          <p class="pb-5 pl-5 text-gray-600">Rebranding</p>
+        </div>
+        <!-- work 4 -->
+        <div class="md:px-6 md:pt-6 col-span-1 w-fit border !border-gray-400 p-2 lg:p-2 cursor-pointer">
+          <div class="h-[360px] md:[300px]"><a class="modale-open" href="https://www.behance.net/gallery/236243061/HYPNETHAE-Brand-Identity"><img class="h-full object-cover"
+                src="Img/3.jpg" alt=""></a></div>
+          <div class="my-5 bg-gray-600 w-full h-[1px]"></div>
+          <p class="pl-5 font-bold text-gray-400"><a href="https://www.behance.net/gallery/236243061/HYPNETHAE-Brand-Identity">HYPNÉTHÆ</a></p>
+          <p class="pb-5 pl-5 text-gray-600">Brand Identity</p>
+        </div>
+        <!-- work 5 -->
+        <div class="md:px-6 md:pt-6 col-span-1 w-fit border !border-gray-400 p-2 lg:p-2 cursor-pointer">
+          <div class="h-[360px] md:[300px]"><a class="modale-open" href="https://www.behance.net/gallery/235941709/ONDE-2024"><img class="h-full object-cover"
+                src="Img/Tavola da disegno 1.jpg" alt=""></a></div>
+          <div class="my-5 bg-gray-600 w-full h-[1px]"></div>
+          <p class="pl-5 font-bold text-gray-400"><a href="https://www.behance.net/gallery/235941709/ONDE-2024">ONDE</a></p>
+          <p class="pb-5 pl-5 text-gray-600">Photo Book</p>
+        </div>
+        <!-- work 6 -->
+        <div class="md:px-6 md:pt-6 col-span-1 w-fit border !border-gray-400 p-2 lg:p-2 cursor-pointer">
+          <div class="h-[360px] md:[300px]"><a class="modale-open" href="https://www.behance.net/gallery/235789567/LEGA-NAZIONALE-DILETTANTI-Proposta-rebranding"><img class="h-full object-cover"
+                src="Img/2.jpg" alt=""></a></div>
+          <div class="my-5 bg-gray-600 w-full h-[1px]"></div>
+          <p class="pl-5 font-bold text-gray-400"><a href="https://www.behance.net/gallery/235789567/LEGA-NAZIONALE-DILETTANTI-Proposta-rebranding">LEGA NAZIONALE DILETTANTI</a></p>
+          <p class="pb-5 pl-5 text-gray-600">Rebranding</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- overlay sidebar -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+  <!-- sidebar -->
+  <div id="sidebar"
+    class="lg:hidden flex fixed top-0 right-0 h-full w-[200px] md:w-[350px] bg-white p-10 transform translate-x-full transition-transform duration-700 ease-in-out z-50">
+    <div class="flex-col h-full">
+      <ul class="justify-start space-y-4 uppercase font-bold text-[15px] md:text-[25px] text-gray-600 gap-4">
+        <li class=" hover:text-gray-400"><a href="index.html">home</a></li>
+        <li class=" hover:text-gray-400"><a href="about.html">about</a></li>
+        <li class=" hover:text-gray-400"><a href="service.html">service</a></li>
+        <li class=" hover:text-gray-400"><a href="portfolio.html">portfolio</a></li>
+        <li class=" hover:text-gray-400"><a href="news.html">news</a></li>
+        <li class=" hover:text-gray-400"><a href="contact.html">contact</a></li>
+      </ul>
+      <div class="text-sm text-gray-600 pt-10">
+        <p>© 2024 Kioto <br>
+          Created by <span class="font-bold">Marketify</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- codice jquery -->
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const toggleBtn = document.getElementById('sidebar-btn');
+
+    function openSidebar() {
+      sidebar.classList.remove('translate-x-full');
+      sidebar.classList.add('translate-x-0');
+      overlay.classList.remove('hidden');
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('translate-x-0');
+      sidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    }
+
+    toggleBtn.addEventListener('click', openSidebar);
+    overlay.addEventListener('click', closeSidebar);
+
+  </script>
+
+</body>
+
+</html>

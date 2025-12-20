@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- js tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Fontwesome -->
+    <script src="https://kit.fontawesome.com/6b54c4443a.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assest/js/"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --font-syne: 'Syne', sans-serif;
+        }
+        .bordo::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+
+          @apply absolute w-full h-full -rotate-y-8 left-6 bottom-6 perspective-[300px]  border-1 border-gray-200;
+          
+        }
+
+        .team-1 {
+          background-image: url('assest/img/images/member/Matilde.jpg');
+          @apply bg-center bg-cover;
+        }
+        .team-2 {
+          background-image: url('assest/img/images/member/Riccardo.jpg');
+          @apply bg-center bg-cover;
+        }
+        .team-3 {
+          background-image: url('assest/img/images/member/Federico.jpg');
+          @apply bg-center bg-cover;
+        }
+
+        .testimonial-1 {
+          background-image: url('assest/img/images/testimonial/Luca.jpeg');
+          @apply bg-center bg-cover;
+        }
+
+        .testimonial-2 {
+          background-image: url('assest/img/images/testimonial/Elena.jpg');
+          @apply bg-center bg-cover;
+        }
+
+      </style>
+
+</head>
+
+<body class="!font-syne bg-gray-100">
+
+    <div class="flex">
+
+        <!-- nav -->
+        <body class="!font-syne bg-gray-100">
+
+            <div class="lg:flex">
+          
+              <!-- nav -->
+              <div
+                class="hidden lg:flex lg:flex-col bg-white h-screen w-[350px] px-[70px] justify-center space-y-10 border-gray-200 border-r-2 content-center position: fixed">
+                <div class="w-42">
+                  <img src="Img/LOGOPRS.png" alt="">
+                  <p class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500">Graphic Designer</p>
+                </div>
+                <ul class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500 gap-4">
+                  <li class=" hover:text-black"><a href="index.html">home</a></li>
+                  <li class=" hover:text-black"><a href="about.html">about</a></li>
+                  <li class=" hover:text-black"><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="text-sm text-gray-500 pt-10">
+                  <p>© 2026 Cyber <br>
+                    Created by <span class="font-bold">cyberstudio</span></p>
+                </div>
+              </div>
+          
+              <!-- nav cellulare -->
+              <div class="lg:hidden flex fixed bg-black w-screen h-[50px] px-8 items-center justify-between">
+                <div class="w-24 py-4">
+                  <img src="Img/LOGOPRS.png" alt="">
+                </div>
+                <button id="sidebar-btn" class="text-2xl font-bold text-white">x</button>
+              </div>
+          
+          
+        <!-- main -->
+        <div
+            class="flex lg:flex-row flex-col-reverse md:flex-row w-screen h-screen content-center items-center justify-center lg:justify-between md:space-x-10 p-5 pt-20 md:mt-20 lg:px-20 lg:py-32 overflow-y-auto">
+<div class="lg:pl-70"> 
+            <div class="lg:px-6 lg:py-32 overflow-y-auto w-full h-screen">
+
+                <div class="flex flex-col space-y-10">
+                    <!-- 1 parte -->
+                    <div class="flex flex-col md:flex-row md:space-y-0 space-y-10 pb-1 h-fit justify-between">
+                        <div class="md:w-1/2 md:space-y-0 space-y-10">
+                            <p class="text-[20px] md:pb-10 font-bold text-black uppercase">// <span
+                                    class="lg:tracking-[8px]tracking-[2px] pl-3">about me</span></p>
+                            <p class="md:pb-10 text-[15px] pr-10 text-gray-400 text-left">
+                                Sono Sara Assisi specializzata in Graphic Design, un campo che mi
+affascina per la combinazione di creatività e tecnologia.
+Mi piace esprimere la mia arte sia su supporti cartacei
+che digitali, con un particolare interesse per l’uso della
+tavoletta grafica, che mi consente di tradurre le mie idee
+con precisione e fluidità, esplorando stili e tecniche diverse.
+Resto costantemente aggiornata sulle tendenze del design
+e sulle nuove tecnologie. <span class="md:hidden lg:flex">
+*La curiosità e il mio occhio per i dettagli mi permettono di
+affinare il mio stile e migliorare continuamente. </span>
+                            </p>
+                            <button class="uppercase text-xs px-8 py-4 bg-gray-500 text-white hover:bg-black"><a href="https://drive.google.com/drive/u/0/folders/1us_lxBny4BSJTrmQozl1deDnruo0UNxx">download
+                                cv</a></button>
+                        </div>
+
+                        <div class="md:w-1/2 md:mt-0 lg:pl-10">
+                            <p class="text-[20px] pb-10 font-bold text-black uppercase">// <span
+                                    class="lg:tracking-[8px] tracking-[2px] pl-3">personal contacts</span></p>
+                            <ul class=" w-full font-xs space-y-2">
+                                <li class="text-gray-500">
+                                    <p class="flex w-full"><span
+                                            class="font-medium w-28 text-black">Name:</span><span>Sara
+                                            Assisi</span>
+                                    </p>
+                                </li>
+                                <li class="text-gray-500">
+                                    <p class="flex w-full"><span
+                                            class="font-medium w-28 text-black">Address:</span><span>Manfredonia (FG), Italy</span></p>
+                                </li>
+                                <li class="text-gray-500">
+                                    <p class="flex w-full"><span
+                                            class="font-medium w-28 text-black">Study:</span><span>Università
+                                            Euroepa
+                                            del Design</span></p>
+                                </li>
+                                <li class="text-gray-500">
+                                    <p class="flex w-full"><span
+                                            class="font-medium w-28 text-black">Degree:</span><span>Graphic
+                                            designer</span></p>
+                                </li>
+                                <li class="text-gray-500">
+                                    <p class="flex w-full"><span
+                                            class="font-medium w-28 text-black">Mail:</span><span>assisisara@gmail.com</span>
+                                    </p>
+                                </li>
+                                <li class="text-gray-500">
+                                    <p class="flex w-full"><span
+                                            class="font-medium w-28 text-black">Phone:</span><span>+39
+                                            3421635216</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                
+                    <!-- 3 parte -->
+                    <div
+                        class="flex flex-col md:flex-row border-gray-200 border-t-2 pt-4 relativa lg:space-x-10 space-y-10 md:space-y-0 pb-10 justify-between ">
+                        <div class="md:w-1/2 text-gray-400">
+                            <p class="text-[20px] text-black pb-10 font-bold uppercase">// <span
+                                    class="lg:tracking-[8px] tracking-[2px] pl-3">graphic skills</span></p>
+                            <div>
+                                <ul class="w-full font-xs">
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Photoshop</span>
+                                    </li>
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Illustrator</span></li>
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Indesign</span></li>
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Premiere Pro</span></li>
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Visual Studio Code</span></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-1/2 text-gray-400">
+                            <p class="text-[20px] text-black pb-10 font-bold uppercase">// <span
+                                    class="tracking-[8px] pl-3">language skills</span></p>
+                            <div>
+                                <ul class="w-full font-xs">
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Certificazione
+                                            Linguistica
+                                            Inglese Trinity Livello B2</span></li>
+                                    <li class="flex w-full"><span class="text-black w-10"><i
+                                                class="fa-solid fa-check"></i></span><span>Certificazione
+                                            Linguistica
+                                            Russo TORFL Livello B2</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 parte -->
+                    <div
+                        class="flex flex-col lg:flex-row border-gray-200 border-t-2 pt-4 relative lg:space-x-10 space-y-10 md:space-y-0 pb-10 justify-between ">
+                        <div class="lg:w-1/2 text-gray-400">
+                            <p class="text-[20px] pb-10 font-bold text-black uppercase">// <span
+                                    class="tracking-[8px] pl-3">education</span></p>
+
+                            <div class="space-y-10">
+                                <div
+                                    class="flex flex-col md:flex md:flex-row border-gray-300  border-b-2 pb-10 justify-between">
+                                    <div class="pb-5 lg:pb-0">
+                                        <p class="font-bold text-black">Liceo Scientifico Galilei-Moro, FG</p>
+                                        <p>Scienze Applicate</p>
+                                    </div>
+                                    <div
+                                        class="flex md:h-1/2 lg:w-1/4 w-1/2 px-4 py-1 font-thin border-2 border-gray-300 items-center justify-center">
+                                        2017-2022
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex flex-col md:flex md:flex-row border-gray-300  border-b-2 pb-10 justify-between">
+                                    <div class="pb-5 lg:pb-0">
+                                        <p class="font-bold text-black">Università Europea del design, PE</p>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                    <div
+                                        class="flex md:h-1/2 lg:w-1/4 w-1/2 px-4 py-1 font-thin border-2 border-gray-300 items-center justify-center">
+                                        2022-2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-1/2 md:mt-10 text-gray-400">
+                            <p class="text-[20px] text-black font-bold pb-10 uppercase">// <span
+                                    class="tracking-[8px] pl-3">experience</span></p>
+
+                            <div class="space-y-10">
+                                <div
+                                    class="flex flex-col md:flex md:flex-row border-gray-300  border-b-2 pb-10 justify-between">
+                                    <div class="pb-5 lg:pb-0">
+                                        <p class="text-black font-bold">Stage SZ Studio Milano</p>
+                                        <p>Stage in Graphic Design and Art director</p>
+                                    </div>
+                                    <div
+                                        class="flex md:h-1/2 lg:w-1/4 w-1/2 px-4 py-1 font-thin border-2 border-gray-300 items-center justify-center">
+                                        2025
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex flex-col md:flex md:flex-row border-gray-300 border-b-2 pb-10 justify-between">
+                                    <div class="pb-5 lg:pb-0">
+                                        <p class="font-bold text-black">Outsoon Collective x Bombadischi</p>
+                                        <p>Graphic Designer and Social Manager</p>
+                                    </div>
+                                    <div
+                                        class="flex md:h-1/2 lg:w-1/4 w-1/2 px-4 py-1 font-thin border-2 border-gray-300 items-center justify-center">
+                                        2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+    </div>
+    </div>
+    </div>
+</div>
+    <!-- overlay sidebar -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- sidebar -->
+    <div id="sidebar"
+        class="lg:hidden flex fixed top-0 right-0 h-full w-[200px] md:w-[350px] bg-white p-10 transform translate-x-full transition-transform duration-700 ease-in-out z-50">
+        <div class="flex-col h-full">
+            <ul class="justify-start space-y-4 uppercase font-bold text-[15px] md:text-[25px] text-gray-600 gap-4">
+                <li class=" hover:text-gray-400"><a href="index.html">home</a></li>
+                <li class=" hover:text-gray-400"><a href="about.html">about</a></li>
+                <li class=" hover:text-gray-400"><a href="service.html">service</a></li>
+                <li class=" hover:text-gray-400"><a href="portfolio.html">portfolio</a></li>
+                <li class=" hover:text-gray-400"><a href="news.html">news</a></li>
+                <li class=" hover:text-gray-400"><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="text-sm text-gray-600 pt-10">
+                <p>© 2024 Kioto <br>
+                    Created by <span class="font-bold">Marketify</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- codice jquery -->
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        const toggleBtn = document.getElementById('sidebar-btn');
+
+        function openSidebar() {
+            sidebar.classList.remove('translate-x-full');
+            sidebar.classList.add('translate-x-0');
+            overlay.classList.remove('hidden');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('translate-x-0');
+            sidebar.classList.add('translate-x-full');
+            overlay.classList.add('hidden');
+        }
+
+        toggleBtn.addEventListener('click', openSidebar);
+        overlay.addEventListener('click', closeSidebar);
+
+    </script>
+
+</body>
+
+</html>
