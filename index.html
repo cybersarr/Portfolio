@@ -91,6 +91,17 @@
         .bar:last-child:after {
           content: "";
         }
+        .hero-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;        /* zoom automatico */
+  object-position: center;  /* focus sulla faccia */
+
+  z-index: -1;}
       </style>
 
 </head>
@@ -121,7 +132,7 @@
     </div>
 
     <!-- nav cellulare -->
-    <div class="lg:hidden flex fixed bg-black w-screen h-[50px] px-8 items-center justify-between">
+    <div class="lg:hidden flex fixed bg-black w-screen h-[80px] px-8 items-center justify-between">
       <div class="w-24 py-4">
         <img src="Img/LogoBianco.png" alt="">
       </div>
@@ -130,6 +141,13 @@
 
 
     <!-- main -->
+     <div class="bg-white">
+      <div class="lg:w-full lg:ml-80">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="Img/Sequenza 01.mp4" type="video/mp4">
+</video>
+     </div>
+     </div>
 
      <!-- overlay sidebar -->
   <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
