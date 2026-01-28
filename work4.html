@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+
+    <!-- js tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Fontwesome -->
+    <script src="https://kit.fontawesome.com/6b54c4443a.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/js/"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+
+        .bordo::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+
+          @apply absolute w-full h-full -rotate-y-8 left-6 bottom-6 perspective-[300px]  border-1 border-gray-200;
+      }
+    
+    @theme {
+          --font-syne: 'Syne', sans-serif;
+        }
+        html, body {
+          height: 100%;
+          margin: 0;
+      }
+        .bordo::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+
+          @apply absolute w-full h-full -rotate-y-8 left-6 bottom-6 perspective-[300px]  border-1 border-gray-200;
+        }
+
+        .bar:after {
+          content: "/";
+          @apply absolute px-2 text-gray-400;
+        }
+
+        .bar:last-child:after {
+          content: "";
+        }
+      </style>
+
+</head>
+
+
+<body class="!font-syne bg-gray-100">
+    <!-- Blocca il menu -->
+    <header class="fixed top-0 w-full z-50 bg-black">
+        <div class="lg:flex">
+
+            <!-- nav -->
+            <div
+                class="hidden lg:flex lg:flex-col bg-white h-screen w-[350px] px-[70px] justify-center space-y-10 border-gray-200 border-r-2 content-center position: fixed">
+                <div class="w-42">
+                    <img src="Img/LOGOPRS.png" alt="">
+                    <p class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500">Graphic Designer</p>
+                </div>
+                <ul class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500 gap-4">
+                    <li class=" hover:text-black"><a href="index.html">home</a></li>
+                    <li class=" hover:text-black"><a href="work.html">work</a></li>
+                    <li class=" hover:text-black"><a href="about.html">about</a></li>
+                    <li class=" hover:text-black"><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="text-sm text-gray-500 pt-10">
+                    <p>© 2026 Cyber <br>
+                        Created by <span class="font-bold">cyberstudio</span></p>
+                </div>
+            </div>
+
+            <!-- nav cellulare -->
+            <div class="lg:hidden flex fixed bg-black w-screen h-[80px] px-8 items-center justify-between">
+                <div class="w-24 py-4">
+
+                    <a href="index.html"><img src="Img/LogoBianco.png" alt=""></a>
+                </div>
+                <button id="sidebar-btn" class="text-2xl font-bold text-white"><i class="fa-solid fa-bars"></i></button>
+            </div>
+    </header>
+
+    <!-- main Work1 -->
+    <main class="lg:p-10 lg:pb-0">
+
+        <div class="lg:pl-90 lg:mt-10 mt-30 mb-10 pl-10 pr-10">
+            <p class="text-[40px] font-bold text-black uppercase">// <span
+                    class="lg:tracking-[8px] tracking-[2px] pl-3">Outsoon Collective</span>
+            </p>
+            <p class="text-[20px] pb-10">* <span class="lg:tracking-[8px] tracking-[2px] pl-3">Single Visuals
+                    2025</span>
+            </p>
+            <div class="text-gray-400">
+                <p class="text-[16px]">Among the recent collaborations I am particularly proud of, I handled the graphic
+                    direction for the creation of the single cover for OUTSOON Collective, a group of emerging young
+                    singers.
+                    The project is part of an album developed through the collaboration between SiamoUnMagazine and
+                    Bomba Dischi, an independent label deeply focused on the new Italian music scene.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:pl-90 pl-5 pr-5">
+
+            <div class="work-card col-span-1 w-full cursor-pointer">
+                <img src="Img/O1.png" alt="">
+            </div>
+
+            <div class="work-card col-span-1 w-full cursor-pointer">
+                <img src="Img/O2.png" alt="">
+            </div>
+
+            <div class="work-card col-span-1 w-full cursor-pointer">
+                <img src="Img/OUTSOON.png" alt="">
+            </div>
+
+            <div class="work-card col-span-1 w-full cursor-pointer">
+                <img src="Img/O5.png" alt="">
+            </div>
+            <div class="work-card col-span-1 w-full cursor-pointer">
+                <img src="Img/O4.png" alt="">
+            </div>
+            <div class="work-card col-span-1 w-full cursor-pointer">
+                <img src="Img/O6.png" alt="">
+            </div>
+
+            <div class="col-span-full mt-12 flex justify-between items-center pb-20">
+                <a href="work.html"
+                    class="inline-block uppercase text-xs px-8 py-4 border-1 hover:bg-gray-500 hover:text-white">
+                    Go Back
+                </a>
+
+                <a href="work5.html"
+                    class="inline-block uppercase text-xs px-8 py-4 bg-gray-500 text-white hover:bg-black">
+                    Next
+                </a>
+            </div>
+        </div>
+
+    </main>
+    <!-- overlay sidebar -->
+
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden z-40"></div>
+
+    <!-- sidebar -->
+
+    <div id="sidebar"
+        class="lg:hidden flex fixed top-0 right-0 h-full w-[200px] md:w-[350px] bg-white p-10 transform translate-x-full transition-transform duration-700 ease-in-out z-50">
+        <div class="flex-col h-full">
+            <ul class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500 gap-4">
+                <li class=" hover:text-black"><a href="index.html">home</a></li>
+                <li class=" hover:text-black"><a href="work.html">work</a></li>
+                <li class=" hover:text-black"><a href="about.html">about</a></li>
+                <li class=" hover:text-black"><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="text-sm text-gray-500 pt-10">
+                <p>© 2026 Cyber <br>
+                    Created by <span class="font-bold">cyberstudio</span></p>
+            </div>
+        </div>
+
+        <!-- codice jquery -->
+
+        <script>
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            const toggleBtn = document.getElementById('sidebar-btn');
+
+            function openSidebar() {
+                sidebar.classList.remove('translate-x-full');
+                sidebar.classList.add('translate-x-0');
+                overlay.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeSidebar() {
+                sidebar.classList.remove('translate-x-0');
+                idebar.classList.add('translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            toggleBtn.addEventListener('click', openSidebar);
+            overlay.addEventListener('click', closeSidebar);
+
+        </script>
+
+</body>
+
+</html>
