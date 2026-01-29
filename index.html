@@ -14,7 +14,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
-
   <!-- icon -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -32,6 +31,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
 
+    @theme {
+      --font-syne: 'Syne', sans-serif;
+    }
+    
     html, body {
           height: 100%;
           margin: 0;
@@ -75,22 +78,23 @@
 
     <!-- nav -->
     <div
-      class="hidden lg:flex lg:flex-col bg-white h-screen w-[350px] px-[70px] justify-center space-y-10 border-gray-200 border-r-2 content-center position: fixed">
-      <div class="w-42">
+    class="hidden lg:flex lg:flex-col bg-white h-screen w-[350px] px-[70px] justify-center space-y-10 border-gray-200 border-r-2 content-center position: fixed">
+    <div class="w-42">
         <img src="Img/LOGOPRS.png" alt="">
-        <p class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500">Graphic Designer</p>
-      </div>
-      <ul class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500 gap-4">
+        <p class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500">Graphic Designer
+        </p>
+    </div>
+    <ul class="justify-start space-y-4 uppercase font-normal text-sm text-gray-500 gap-4">
         <li class=" hover:text-black"><a href="index.html">home</a></li>
         <li class=" hover:text-black"><a href="work.html">work</a></li>
         <li class=" hover:text-black"><a href="about.html">about</a></li>
         <li class=" hover:text-black"><a href="contact.html">contact</a></li>
-      </ul>
-      <div class="text-sm text-gray-500 pt-10">
+    </ul>
+    <div class="text-sm text-gray-500 pt-10">
         <p>© 2026 Cyber <br>
-          Created by <span class="font-bold">cyberstudio</span></p>
-      </div>
+            Created by <span class="font-bold">cyberstudio</span></p>
     </div>
+</div>
 
     <!-- nav cellulare -->
     <div class="lg:hidden flex fixed bg-black w-screen h-[80px] px-8 items-center justify-between">
