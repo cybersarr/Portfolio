@@ -1,40 +1,330 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Home</title>
 
-  <!-- js tailwind -->
+  <!-- Tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- icon -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-  <!-- Fontwesome -->
-  <script src="https://kit.fontawesome.com/6b54c4443a.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script
+    src="https://kit.fontawesome.com/6b54c4443a.js"
+    crossorigin="anonymous">
+  </script>
 
   <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  </script>
 
+  <!-- Il tuo JS -->
   <script src="assets/js/script.js"></script>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
 
     @theme {
       --font-syne: 'Syne', sans-serif;
     }
-    
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    .bordo::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+
+      @apply absolute w-full h-full -rotate-y-8 left-6 bottom-6 perspective-[300px] border border-gray-200;
+    }
+
+    .bar:after {
+      content: "/";
+      @apply absolute px-2 text-gray-400;
+    }
+
+    .bar:last-child:after {
+      content: "";
+    }
+
+    .hero-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero-video {
+    left: 350px;
+    width: calc(100vw - 350px);
+  }
+}
+
+  </style>
+
+</head>
+
+
+<body class="font-syne bg-gray-100">
+
+  <!-- NAV DESKTOP -->
+
+  <div
+    class="hidden lg:flex lg:flex-col fixed top-0 left-0 bg-white h-screen w-[350px] px-[70px] justify-center space-y-10 border-gray-200 border-r-2 z-50">
+
+    <div class="w-42">
+
+      <img src="Img/LOGOPRS.png" alt="Logo">
+
+      <p class="uppercase font-normal text-sm text-gray-500">
+        Graphic Designer
+      </p>
+
+    </div>
+
+
+    <ul class="space-y-4 uppercase font-normal text-sm text-gray-500">
+
+      <li class="hover:text-black">
+        <a href="index.html">home</a>
+      </li>
+
+      <li class="hover:text-black">
+        <a href="work.html">work</a>
+      </li>
+
+      <li class="hover:text-black">
+        <a href="about.html">about</a>
+      </li>
+
+      <li class="hover:text-black">
+        <a href="contact.html">contact</a>
+      </li>
+
+    </ul>
+
+
+    <div class="text-sm text-gray-500 pt-10">
+
+      <p>
+        © 2026 Cyber <br>
+        Created by
+        <span class="font-bold">cyberstudio</span>
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- NAV MOBILE -->
+
+  <div
+    class="lg:hidden fixed top-0 left-0 bg-black w-screen h-[80px] px-8 items-center justify-between flex z-50">
+
+    <div class="w-24 py-4">
+
+      <a href="index.html">
+        <img src="Img/LogoBianco.png" alt="Logo">
+      </a>
+
+    </div>
+
+
+    <button
+      id="sidebar-btn"
+      type="button"
+      class="text-2xl font-bold text-white z-[60]">
+
+      <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+  </div>
+
+  <!-- VIDEO -->
+
+
+  <video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+
+    <source
+      src="Img/Sequenza 01.mp4"
+      type="video/mp4">
+
+  </video>
+
+
+  <!-- TESTO MOBILE -->
+
+  <div
+    class="lg:hidden fixed inset-0 flex items-center justify-center z-10 pointer-events-none px-8 mt-100">
+
+    <h2 class="text-sm font-normal text-gray-500 text-center">
+
+      While I’m busy burning through my ideas,
+
+      <br>
+
+      <span class="text-sm font-bold">
+        menu is always in the top right corner.
+      </span>
+
+    </h2>
+
+  </div>
+
+
+  <!-- OVERLAY -->
+
+
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black/50 hidden z-40">
+  </div>
+
+
+  <!-- SIDEBAR MOBILE -->
+
+  <div
+    id="sidebar"
+    class="lg:hidden fixed top-0 right-0 h-full w-[200px] md:w-[350px] bg-white p-10 translate-x-full transition-transform duration-700 ease-in-out z-50">
+
+    <div class="flex flex-col h-full">
+
+      <ul class="space-y-4 uppercase font-normal text-sm text-gray-500">
+
+        <li class="hover:text-black">
+          <a href="index.html">home</a>
+        </li>
+
+        <li class="hover:text-black">
+          <a href="work.html">work</a>
+        </li>
+
+        <li class="hover:text-black">
+          <a href="about.html">about</a>
+        </li>
+
+        <li class="hover:text-black">
+          <a href="contact.html">contact</a>
+        </li>
+
+      </ul>
+
+
+      <div class="text-sm text-gray-500 pt-10">
+
+        <p>
+          © 2026 Cyber <br>
+          Created by
+          <span class="font-bold">cyberstudio</span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- JAVASCRIPT MENU -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      const toggleBtn = document.getElementById("sidebar-btn");
+
+
+      function openSidebar() {
+
+        sidebar.classList.remove("translate-x-full");
+        sidebar.classList.add("translate-x-0");
+
+        overlay.classList.remove("hidden");
+
+        document.body.classList.add("overflow-hidden");
+
+      }
+
+
+      function closeSidebar() {
+
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("translate-x-full");
+
+        overlay.classList.add("hidden");
+
+        document.body.classList.remove("overflow-hidden");
+
+      }
+
+
+      toggleBtn.addEventListener("click", function () {
+
+        if (sidebar.classList.contains("translate-x-full")) {
+
+          openSidebar();
+
+        } else {
+
+          closeSidebar();
+
+        }
+
+      });
+
+
+      overlay.addEventListener("click", closeSidebar);
+
+
+      // Chiude il menu quando clicchi su un link
+      const sidebarLinks = sidebar.querySelectorAll("a");
+
+      sidebarLinks.forEach(function (link) {
+
+        link.addEventListener("click", closeSidebar);
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>    
     html, body {
           height: 100%;
           margin: 0;
